@@ -1,0 +1,1282 @@
+{
+	"info": {
+		"_postman_id": "05886589-0fe9-42a4-a602-9c869bc1cc11",
+		"name": "hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/customers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"customers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Shateel",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Ahmed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shateel@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01670645945",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/customers/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"customers",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get customer by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Shateel",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Ahmed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shateel@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01670645945",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/customers/2/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"customers",
+								"2",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bookings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Shateel",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Ahmed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shateel@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01670645945",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/customers/1/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"customers",
+								"1",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Shateel",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Ahmed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shateel@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01670645945",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/customers/1/payments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"customers",
+								"1",
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/customers/2/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"customers",
+								"2",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "Index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "room_number",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "max_persons",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "room_type",
+									"value": "single",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get room by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "room_number",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "max_persons",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "room_type",
+									"value": "single",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/1/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								"1",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/1/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								"1",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bookings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Shateel",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Ahmed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shateel@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01670645945",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/1/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								"1",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "Index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/bookings/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"bookings",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "room_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "arrival",
+									"value": "2020-12-25",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/bookings/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"bookings",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get room by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "room_number",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "max_persons",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "room_type",
+									"value": "single",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/1/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								"1",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check in",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "room_number",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "max_persons",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "room_type",
+									"value": "single",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/bookings/1/checkIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"bookings",
+								"1",
+								"checkIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "room_number",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "max_persons",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "room_type",
+									"value": "single",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/bookings/1/checkOut",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"bookings",
+								"1",
+								"checkOut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Make payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/bookings/1/makePayment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"bookings",
+								"1",
+								"makePayment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/rooms/1/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"rooms",
+								"1",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Shateel Ahmed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shateel@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "654321",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "654321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shateel@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "654321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGQyOTQ3N2VmODE5NDJkNjc3NzgzYmQ1YTU0MGViNWNhNWM5N2ViNDg1ZGM5OTM0ODViZWNhOWNiMDYyZTg2NTA5OGRhMjU1OTBjNDE4NzIiLCJpYXQiOjE2MDgzNzYxNTksIm5iZiI6MTYwODM3NjE1OSwiZXhwIjoxNjM5OTEyMTU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.e1axpw9frVyd2kbMEUFd21-dccCwiob2Ldi5ILOkrOb8L_1rMkLeNZtcBeUTtOhrmq0NfqfsUGKPLRlBRBMsKfRvJTfp6_T9bNGqt41QiZrP1wvn8JbS0-Ug-nm6Eek6uFOiz4rXF-mcQwP42P-7nncKt5ltmHJFT3ZgawfnlnJui24WN_8g1GzgpBk3SRLteTfBl-knbBCmeKzqldjTP5Fi8ctLwHmKW6KioLFowal0gasZzNLU8x-Kpo8qCGj8JcawQ1xHk1B7lwTmGDisuPgyZ39tlCv8vltjtZtSrRjOH_PQ34TVz4n8Aml9JKR0xDkzELzDiom0cySUEmdwsKzBooz8_gbDGvtc8zUE88BMDJUWbsmEbtd4FAl04opdcqPyhvizUMYjgg-nCYteiWzDygZKXcJv-dwfjgOK1uQzyLsoKLSri7vyXafPC3gK5YfDNGnPZpl-0xWy8JeMSfG6Az42HFfCdrvIubkN8EaHtmHEnCxZfUGhhBsKJp4UBKXOWwmI5ZK4ro7Wcxz3XrZSTI-jEo-YjQ-oGLVueflc134k21Gx880h3e8wfjgq8TZZDX3i1WyygBenByrGEf3LdYP9DJToXitoJk_xJ0j8RKNQbVIJtR2ENbTZeWs1WDXFsGl8dHquVOTwTTdFmcOunTsynqqoztHPEQ5PMbc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shateel@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "654321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/gp-hackathon-hotel-booking-system/public/api/v1/users/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gp-hackathon-hotel-booking-system",
+								"public",
+								"api",
+								"v1",
+								"users",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
