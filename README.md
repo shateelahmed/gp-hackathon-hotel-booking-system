@@ -4,8 +4,14 @@
 <p>Framework: Laravel</p>
 <br>
 
-<p>Please run the following command in the root directory of the project to enable token generation</p>
-<code>php artisan passport:client --personal</code>
+<h3>Installation</h3>
+<ol>
+    <li>Run <code>composer install</code> in the root directory of the project</li>
+    <li>Rename <code>.env.example</code> file as <code>.env</code></li>
+    <li>Update <code>.env</code> file</li>
+    <li>Run <code>php artisan key:generate</code></li>
+    <li>Run <code>php artisan passport:client --personal</code> to enable token generation</li>
+</ol>
 
 <br>
 <br>
